@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Tic Tac Toe</h1>
+    </div>
+    <div class="scoreCard">
+      <div class="scoreCardLeft">
+        Player 1 : X<br />
+        <h3 id="player1">Score: 0</h3>
+      </div>
+      <div class="scoreCardRight">
+        Player 2 : O<br />
+        <h3 id="player2">Score: 0</h3>
+      </div>
+    </div>
+    <div class="turn"><h3 id="turn">Current Turn: Player 1</h3></div>
+    <br /><br />
+    <div class="GameBoard" id="GameBoard">
+      <div class="gameBoardTop">
+        <div class="gameBoardPiece" id="1" onclick="{f(1)}"></div>
+        <div class="gameBoardPiece" id="2" onclick="{f(2)}"></div>
+        <div class="gameBoardPiece" id="3" onclick="{f(3)}"></div>
+      </div>
+
+      <div class="gameBoardMiddle">
+        <div class="gameBoardPiece" id="4" onclick="{f(4)}"></div>
+        <div class="gameBoardPiece" id="5" onclick="{f(5)}"></div>
+        <div class="gameBoardPiece" id="6" onclick="{f(6)}"></div>
+      </div>
+      <div class="gameBoardBottom">
+        <div class="gameBoardPiece" id="7" onclick="{f(7)}"></div>
+        <div class="gameBoardPiece" id="8" onclick="{f(8)}"></div>
+        <div class="gameBoardPiece" id="9" onclick="{f(9)}"></div>
+      </div>
+    </div>
+
+    <div class="ResultScreen" id="ResultScreen">
+      <h2 id="result">Player 1 wins!</h2>
+      <div class="btn" onclick="{nextGame()}">Next Game</div>
+    </div>
+  </body>
+</html>

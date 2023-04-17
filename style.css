@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: darkblue;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header h1{
+    color: white;
+    line-height: 80px;
+}
+
+.scoreCard{
+    display: flex;
+    justify-content: space-around;
+    background-color: royalblue;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.turn{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.GameBoard{
+    width: 90%;
+    margin-left: 5%;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 10px;
+}
+
+.gameBoardTop, .gameBoardMiddle, .gameBoardBottom{
+    width: 100%;
+    height: 32%;
+    border-radius: 10px;
+    padding: 1.3% 0;
+    display: flex;
+    justify-content: space-around
+}
+
+.gameBoardPiece{
+    width: 32%;
+    height: 100%;
+    background-color: royalblue;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 90px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.gameBoardPiece:hover {
+    background-color: darkblue;
+}
+
+.ResultScreen{
+    border: 2px solid darkblue;
+    border-radius: 20px;
+    width: 90%;
+    height: auto;
+    aspect-ratio: 1;
+    margin-left: 5%;
+    text-align: center;
+    color: darkblue;
+    font-size: 25px;
+    display: none;
+}
+
+.ResultScreen h2{
+    justify-content: center;
+    margin: 30% 0;
+}
+
+.btn{
+    width: 70%;
+    align-items: center;
+    background-color: darkblue;
+    margin-left: 15%;
+    height: 40px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: white;
+    border: 1px solid darkblue;
+    color: darkblue;
+    cursor: pointer;
+    user-select: none;
+}
