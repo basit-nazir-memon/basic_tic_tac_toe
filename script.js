@@ -113,13 +113,13 @@ function f(a) {
     document.getElementById("GameBoard").style.display = "none";
   } else if (
     pos1 != " " &&
-    pos2 != "" &&
+    pos2 != " " &&
     pos3 != " " &&
-    pos4 != "" &&
+    pos4 != " " &&
     pos5 != " " &&
-    pos6 != "" &&
+    pos6 != " " &&
     pos7 != " " &&
-    pos8 != "" &&
+    pos8 != " " &&
     pos9 != " "
   ) {
     document.getElementById("result").innerText = "Game Draw";
